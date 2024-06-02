@@ -1,0 +1,94 @@
+.result-badge {
+    position: relative;
+    border-radius: 999px;
+    background-color: var(--main-blue-color);
+    color: var(--main-green-color);
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+  }
+  @media screen and (min-width: 768px) {
+    .result-badge.result-badge-average {
+        margin: 0 0 0 auto;
+    }
+    .result-badge.result-badge-median {
+        margin: 0 auto 0 0;
+    }
+  }
+  .result-badge small {
+    font-size: .7em;
+  }
+  .result-badge p {
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1rem;
+  }
+    .result-badge p .caracters-1,
+    .result-badge p .caracters-2 {
+        font-size: 5rem;
+    }
+    .result-badge p .caracters-3 {
+        font-size: 4.5rem;
+    }
+    .result-badge p .caracters-4 {
+        font-size: 4rem;
+    }
+    .result-badge p .caracters-5 {
+        font-size: 3.2rem;
+    }
+    .result-badge p .caracters-6 {
+        font-size: 2.7rem;
+    }
+    .result-badge p .caracters-7 {
+        font-size: 2.4rem;
+    }
+    .result-badge p .caracters-8 {
+        font-size: 2.1rem;
+    }
+    .result-badge p .caracters-9 {
+        font-size: 1.9rem;
+    }
+    .result-badge p .caracters-10 {
+        font-size: 1.7rem;
+    }
+    .result-badge p .caracters-11 {
+        font-size: 1.5rem;
+    }
+    .result-badge p .caracters-12 {
+        font-size: 1.4rem;
+    }
+    .result-badge p .caracters-13 {
+        font-size: 1.3rem;
+    }
+    .result-badge p .caracters-14,
+    .result-badge p .caracters-15 {
+        font-size: 1.2rem;
+    }
+    .result-badge p .caracters-16,
+    .result-badge p .caracters-17 {
+        font-size: 1.1rem;
+    }
+    .result-badge p .caracters-18,
+    .result-badge p .caracters-19 {
+        font-size: 1rem;
+    }
+    .result-badge p .caracters-20 {
+        font-size: .9rem;
+    }
+  .result-badge h6 {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 2rem;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .result-badge p {
+        
+    }
+    .result-badge h6 {
+        font-size: 1rem;
+    }
+  }

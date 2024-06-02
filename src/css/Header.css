@@ -1,0 +1,28 @@
+header {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    color: var(--main-green-color);
+  }
+    .logo {
+        height: 108px;
+        margin-right: calc(var(--bs-gutter-x) / 2);
+    }
+    .header-title {
+        font-size: 16px;
+        font-weight: 400;
+    }
+        .header-title strong {
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+@media screen and (max-width: 480px) {
+    .header-title {
+        font-size: 14px;
+    }
+    .header-title strong {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

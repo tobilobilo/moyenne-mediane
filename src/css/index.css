@@ -1,0 +1,57 @@
+:root {
+  --main-blue-color: rgb(17 43 120);
+  --secondary-blue-color: rgb(31, 58, 141);
+  --main-grey-color: rgb(131 131 131);
+  --main-green-color: rgb(164 255 169);
+  --secondary-green-color: rgb(229 255 222);
+  --header-height: 150px;
+}
+
+.container, 
+.row {
+  --bs-gutter-x: 50px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+      padding: 0 calc(var(--bs-gutter-x) / 2);
+  }
+}
+.tooltip-inner {
+  text-align: left;
+}
+
+body {
+  background-color: var(--main-blue-color);
+  background: linear-gradient(90deg, var(--main-blue-color) 30%, var(--secondary-blue-color) 100%);
+  color: var(--main-blue-color);
+}
+
+.content {
+  min-height: calc(100vh - var(--header-height));
+  background: var(--main-green-color);
+  border-radius: 20px 20px 0 0;
+}
+@media screen and (min-width: 992px) {
+  .content {
+      background: linear-gradient(90deg, var(--main-green-color) 30%, var(--secondary-green-color) 100%);
+  }
+}
+.icon-info {
+  color: var(--main-blue-color);
+  font-size: 20px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  padding: 0;
+}
+textarea,
+.card {
+  max-width: 800px;
+}
+p {
+  margin: 0;
+}
+.btn-primary {
+  background-color: var(--main-blue-color);
+  border-color: var(--main-blue-color);
+}

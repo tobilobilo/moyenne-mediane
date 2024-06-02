@@ -1,0 +1,9 @@
+textarea.form-control,
+textarea.form-control:focus {
+  height: 300px;
+  background: var(--secondary-green-color);
+  border-color: transparent;
+}
+textarea.form-control::placeholder {
+  color: #adb5c2;
+}
