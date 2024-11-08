@@ -55,3 +55,14 @@ p {
   background-color: var(--main-blue-color);
   border-color: var(--main-blue-color);
 }
+
+@keyframes fadein{
+  0% { opacity:0; }
+  10% { opacity:0; }
+  100% { opacity:1; }
+}
+.graph-slider,
+.result-badge-number,
+.graph-number {
+  animation: 1.2s ease 0s normal forwards 1 fadein;
+}

@@ -92,7 +92,7 @@ const Calculator = () => {
             </div>
           )}
           {inputData.length > 0 && (
-            <div>
+            <div key={average.toString() + median.toString()}>
               <h4 className="fw-bold mb-3">Voici le résultat</h4>
               <Graph numbers={inputData} average={average} median={median} />
               <div className="row result-badges">

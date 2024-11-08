@@ -33,22 +33,6 @@ export function setSliderPinPosition(measure: number, entriesToBeDisplayed: stri
     const perfectMatchEntries = document.querySelectorAll<HTMLElement>(`[data-entry="${measure}"]`);
 
     if (perfectMatchEntries.length > 0) {
-        // if at least one input value displayed on the graph equals to the median
-        // let positionAccumulator = 0;
-        // perfectMatchEntries.forEach((element: HTMLElement) => {
-        //   positionAccumulator += element.offsetLeft;
-        // });
-        //const position = Math.floor(positionAccumulator / perfectMatchEntries.length) + perfectMatchEntries[0].innerHTML.length * (CHAR_WIDTH / 2);
-        /*const numbersToMatch = [...entriesToBeDisplayed];
-        for (let i = 0; i < entriesToBeDisplayed.length; i++) {
-        const pulled = numbersToMatch.splice(Math.floor(numbersToMatch.length / 2), 1);
-        if(Number(pulled[0]) === median) {
-            setMedianSliderPositionX(position);
-            break;
-        }
-        }
-        const position = Math.floor(positionAccumulator / perfectMatchEntries.length) + perfectMatchEntries[0].innerHTML.length * (CHAR_WIDTH / 2);*/
-
         // if at least one entry has the same value as the median, set the position at the entry that is nearest to the middle
         let leapCount = 0;
         for (let i = 0; i <= entries.length; i++) {

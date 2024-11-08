@@ -15,7 +15,7 @@ const Badge = ({ title, id, value }: Badge) => {
   return (
     <div className="col-12 col-md-6 mt-3">
       <div className={`result-badge result-badge-${id}`}>
-        <p id={`results-${id}`}>
+        <p id={`results-${id}`} className="result-badge-number">
           <span className={`caracters-${caractersLength}`}>
             {numberToArray[0]}
             {hasDecimal && (
