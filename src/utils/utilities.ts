@@ -1,4 +1,4 @@
-export const debounce = (callback: Function, delay: number) => {
+export const debounce = (callback: () => void, delay: number) => {
     let debounceTimeout: ReturnType<typeof setTimeout>;
     return () => {
         clearTimeout(debounceTimeout);

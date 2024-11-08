@@ -38,7 +38,7 @@ const Graph = ({ numbers, average, median }: Graph) => {
     return () => {
       window.removeEventListener("resize", debouncedRegenerateGraphNumbers);
     };
-  }, [numbers]);
+  });
 
   // Spread the input numbers based on available width of the graph element
   function generateGraphNumbers(numbers: number[]): string[] {

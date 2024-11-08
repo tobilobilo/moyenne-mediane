@@ -5,7 +5,7 @@ describe('debounce', () => {
     vi.useFakeTimers();
 
     let func: Mock;
-    let debouncedFunc: Function;
+    let debouncedFunc: () => void;
 
     beforeEach(() => {
         func = vi.fn();
