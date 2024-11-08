@@ -15,13 +15,7 @@ yarn install
 Démarrer le projet
 
 ```bash
-npm run dev
-```
-
-Générer les styles avec Tailwind + watch
-
-```bash
-npm run tww
+yarn run dev
 ```
 
 ## Auteur
